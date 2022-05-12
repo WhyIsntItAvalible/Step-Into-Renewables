@@ -1,0 +1,162 @@
+/*green:#04AA6D*/
+/*blue: #338CFF*/
+
+:root {
+ --maingreen: #04AA6D;
+ --mainblue: #338CFF;
+}
+a {
+ color: black;
+ text-decoration: none;
+}
+li {
+ color: #black
+}
+.main h1 {
+  text-align: center;
+}
+iframe {
+ autoplay: 0;
+ autostart: 0;
+}
+.main h2 {
+ text-align: center;
+}
+@font-face {
+  font-family: customFont;
+  src: url(font.ttf);
+}
+
+img{
+ border: 2.5px solid #ffffff;
+}
+html {
+  background-image: url(dark.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: customFont;
+}
+
+.main {
+  margin-left: 200px; /* Same width as the sidebar + left position in px */
+  font-size: 24px; /* Increased text to enable scrolling */
+  padding: 10px, 10px, 10px, 10px
+  font-family: customFont
+  scroll-behaviour: smooth;
+  display: block;
+  width: auto;
+}
+.main p {
+  color: black;
+}
+
+#down {
+  margin-top: 100%;
+  padding-bottom: 25%;
+}
+.BG-Text {
+  padding: 10px, 10px, 10px, 10px;
+  font-size: 45;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+}
+
+.mainTitle {
+ font-size: 100px;
+}
+
+.sidenav {
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 10px;
+  background: #333;
+  overflow-x: hidden;
+  padding: 0px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 18px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a.active {
+  background-color: var(--maingreen);
+  color: white;
+}
+
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media screen and (max-height: 25px) {
+  .sidenav {padding-top: 16px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 8px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color: #ddd; /*nearly white*/
+  color: black;
+}
+
+.topnav a.active {
+  background-color: var(--maingreen);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
