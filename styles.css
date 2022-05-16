@@ -5,6 +5,9 @@
  --maingreen: #04AA6D;
  --mainblue: #338CFF;
 }
+a {
+ color: white;
+}
 .main a {
  color: black;
  text-decoration: none;
